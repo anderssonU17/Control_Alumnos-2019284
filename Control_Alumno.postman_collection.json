@@ -1,0 +1,452 @@
+{
+	"info": {
+		"_postman_id": "c95a3a87-f632-4894-be26-f50fc3091ebc",
+		"name": "Control_Alumno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Alumno",
+			"item": [
+				{
+					"name": "GUARDAR USUARIO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2M2Y4NjU2MGViNjE1ZjFlMmFmYjMxYmUiLCJ1c2VybmFtZSI6IkNlc2FyIiwiZW1haWwiOiJDZXNhckBnbWFpbC5jb20iLCJpYXQiOjE2NzczMTE0MjEsImV4cCI6MTY3NzMxNTAyMX0.HT-0MXw2V6pYFYjhEdpVlJlIX081nmIajeF7_kii8dA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Edgar",
+									"type": "default"
+								},
+								{
+									"key": "age",
+									"value": "18",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "Edgar@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "rol",
+									"value": "ALUMNO",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "edgar1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LISTAR USUARIOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/read-user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"read-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDITAR ALUMNO",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2M2Y5Y2IwMWU1ZTU5NDI3YzFiZWE5N2IiLCJ1c2VybmFtZSI6IkVkZ2FyIiwiZW1haWwiOiJFZGdhckBnbWFpbC5jb20iLCJpYXQiOjE2NzczMTU1NTQsImV4cCI6MTY3NzMxOTE1NH0.2TvrMcTl7sTxImQWf2oO86Um1PbwpFf-hPTW4wCqqQw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Jose De La Cruz",
+									"type": "default"
+								},
+								{
+									"key": "age",
+									"value": "19",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "davidCruz@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "rol",
+									"value": "ALUMNO",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "david19",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/edit-user/63f9cb01e5e59427c1bea97b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"edit-user",
+								"63f9cb01e5e59427c1bea97b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR ALUMNO",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2M2Y4NjU2MGViNjE1ZjFlMmFmYjMxYmUiLCJ1c2VybmFtZSI6IkNlc2FyIiwiZW1haWwiOiJDZXNhckBnbWFpbC5jb20iLCJpYXQiOjE2NzczMTQ2NzgsImV4cCI6MTY3NzMxODI3OH0.XD1okH1dwuBd3aTSo21X2u7gETKQnUAGoIY0Um0tDgw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/delete-user/63f99eddb8040b787af64983",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"delete-user",
+								"63f99eddb8040b787af64983"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Maestro",
+			"item": [
+				{
+					"name": "GUARDAR CURSO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ingles",
+									"type": "default"
+								},
+								{
+									"key": "teacher",
+									"value": "Pedro",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-curse",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-curse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LISTAR CURSOS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2M2Y4NjU2MGViNjE1ZjFlMmFmYjMxYmUiLCJ1c2VybmFtZSI6IkNlc2FyIiwiZW1haWwiOiJDZXNhckBnbWFpbC5jb20iLCJpYXQiOjE2NzcyNzAzMTksImV4cCI6MTY3NzI3MzkxOX0.HgxHmp3u8snkHYr_a97Yf7oMDbuH61b03n6dc4yRci0",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/api/read-course",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"read-course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ASIGNAR PROFESOR",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2M2Y4NjU2MGViNjE1ZjFlMmFmYjMxYmUiLCJ1c2VybmFtZSI6IkNlc2FyIiwiZW1haWwiOiJDZXNhckBnbWFpbC5jb20iLCJpYXQiOjE2NzczMTgxMzUsImV4cCI6MTY3NzMyMTczNX0.PH2egGk-SUOKUqLI3Xorh4UPGxeEJrPglhNeT9mqFlg",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Cesar",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Sociales",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/asign-teacher/Sociales/teacher/Cesar",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"asign-teacher",
+								"Sociales",
+								"teacher",
+								"Cesar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDITAR CURSO",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2M2Y4NjU2MGViNjE1ZjFlMmFmYjMxYmUiLCJ1c2VybmFtZSI6IkNlc2FyIiwiZW1haWwiOiJDZXNhckBnbWFpbC5jb20iLCJpYXQiOjE2NzczMTgxMzUsImV4cCI6MTY3NzMyMTczNX0.PH2egGk-SUOKUqLI3Xorh4UPGxeEJrPglhNeT9mqFlg",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Seminario",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/edit-course/63f9430a669b839b024afaf2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"edit-course",
+								"63f9430a669b839b024afaf2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR CURSO",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2M2Y5Y2IwMWU1ZTU5NDI3YzFiZWE5N2IiLCJ1c2VybmFtZSI6Ikpvc2UgRGUgTGEgQ3J1eiIsImVtYWlsIjoiZGF2aWRDcnV6QGdtYWlsLmNvbSIsImlhdCI6MTY3NzMyMDI5NSwiZXhwIjoxNjc3MzIzODk1fQ.FQacgVjZvbnJCaCWbRTVEUbmbnqLHwmiob-fEfXYhxU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/api/delete-course/63f83b98dc5ccc00b0c6fa2c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"delete-course",
+								"63f83b98dc5ccc00b0c6fa2c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ASIGNAR CURSO ALUMNO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2M2Y4NjU2MGViNjE1ZjFlMmFmYjMxYmUiLCJ1c2VybmFtZSI6IkNlc2FyIiwiZW1haWwiOiJDZXNhckBnbWFpbC5jb20iLCJpYXQiOjE2NzczMTgxMzUsImV4cCI6MTY3NzMyMTczNX0.PH2egGk-SUOKUqLI3Xorh4UPGxeEJrPglhNeT9mqFlg",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Jose De La Cruz",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "Ingles",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/asign-students",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"asign-students"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "Cesar@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "Cesar1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
